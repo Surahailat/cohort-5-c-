@@ -11,7 +11,8 @@ namespace cohort_5_c_
             //1 - Create console application that read string from user and print the same string
 
             string name = Console.ReadLine();
-
+            string name1 = Console.ReadLine();
+            string name2 = Console.ReadLine();
 
         }
     }
