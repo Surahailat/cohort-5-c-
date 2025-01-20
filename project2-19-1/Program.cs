@@ -7,23 +7,23 @@ namespace project2_19_1
 {
     internal class Program
     {
-        static int smaller(int x,int y)
+        static int smaller(int x, int y)
         {
-            if (x>y)
+            if (x > y)
             {
                 return y;
             }
             else
             {
-                return x;   
+                return x;
             }
         }
 
 
         static double speed()
         {
-           double value=Convert.ToInt32 (Console.ReadLine());
-            double val= value*0.621371;
+            double value = Convert.ToInt32(Console.ReadLine());
+            double val = value * 0.621371;
             return val;
 
         }
@@ -33,7 +33,7 @@ namespace project2_19_1
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
             string s = $"{a} hours, {b} minutes";
-            int sum = (a*60)+b;
+            int sum = (a * 60) + b;
             return sum;
 
         }
@@ -71,11 +71,11 @@ namespace project2_19_1
         {
             int sumn = 0;
             int divi;
-            while (num0>0)
+            while (num0 > 0)
             {
                 divi = num0 % 10;
                 sumn += divi;
-                num0 = num0/10;
+                num0 = num0 / 10;
             }
             return sumn;
         }
@@ -84,21 +84,21 @@ namespace project2_19_1
 
 
 
-        
 
 
 
 
 
 
-            static void Main(string[] args)
+
+        static void Main(string[] args)
         {
 
             // 1 - Write a C# program that accepts a double input and converts it into an int. Display both values.
             //•	Example:
             // Input: 9.8
 
-            double dub = Convert.ToDouble (Console.ReadLine());
+            double dub = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine(dub);
             Console.WriteLine((int)dub);
 
@@ -109,49 +109,49 @@ namespace project2_19_1
             //Output: "Your number is: 25"
 
             int num = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Your number is: "+ Convert.ToString(num));
+            Console.WriteLine("Your number is: " + Convert.ToString(num));
 
 
             //3 - Create a string with a sentence. Use ToUpper() and ToLower() to display the uppercase and lowercase versions of the string.
             //Input: "C# is fun!"
 
             string sentence = Console.ReadLine();
-            Console.WriteLine("Uppercase: C# IS "+ sentence.ToUpper());
+            Console.WriteLine("Uppercase: C# IS " + sentence.ToUpper());
             Console.WriteLine("Lowercase: c# is " + sentence.ToLower());
 
 
-//            4 - Write a program that takes a user's full name as input and prints:
-//The first name.
-//The last name.
-//The length of the full name.
-//•	Example:
-//        Input: "John Doe"
+            //            4 - Write a program that takes a user's full name as input and prints:
+            //The first name.
+            //The last name.
+            //The length of the full name.
+            //•	Example:
+            //        Input: "John Doe"
 
-            string fName =Console.ReadLine();
+            string fName = Console.ReadLine();
             string LName = Console.ReadLine();
-            string fullName = fName+" "+ LName;
+            string fullName = fName + " " + LName;
             Console.WriteLine(fullName);
-            Console.WriteLine("First Name: "+fName);
-            Console.WriteLine("Last Name: "+LName);
+            Console.WriteLine("First Name: " + fName);
+            Console.WriteLine("Last Name: " + LName);
             Console.WriteLine(fullName.Length);
 
 
             //5 - Write a program that accepts two integers and prints the smaller of the two.
             //Input: 5, 9
 
-            Console.WriteLine(smaller(5,9 ));
+            Console.WriteLine(smaller(5, 9));
 
 
             //6 - Write a method that converts kilometers per hour to miles per hour.Use this method in a program to convert and display the result.
             //Input: 15 km / h
             //Output: "9.320568 mph"
 
-            Console.WriteLine(speed()+ " mph");
+            Console.WriteLine(speed() + " mph");
 
             //7 - Write a method that takes hours and minutes as input and returns the total number of minutes.
             //Input: 5 hours, 37 minutes
 
-            Console.WriteLine("Total: "+clock()+ " minutes ");
+            Console.WriteLine("Total: " + clock() + " minutes ");
 
 
 
@@ -169,8 +169,8 @@ namespace project2_19_1
             //•	Input: 10, 20
 
             int num1 = Convert.ToInt32(Console.ReadLine());
-            int num2=Convert.ToInt32(Console.ReadLine());
-Console.WriteLine (Compare(num1, num2));
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Compare(num1, num2));
 
 
             //  Write a program that calculates the sum of the digits of a number using arithmetic operators and loops(no conditionals).
@@ -179,7 +179,7 @@ Console.WriteLine (Compare(num1, num2));
 
 
             int num0 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine (sumnum(num0));
+            Console.WriteLine(sumnum(num0));
 
 
             //10 - Reverse a Number
@@ -187,13 +187,13 @@ Console.WriteLine (Compare(num1, num2));
             //Input: 1234
 
             int[] arr = { 1, 2, 3, 4 };
-            
-            for (int i = arr.Length-1; i >=0 ; i--)
+
+            for (int i = arr.Length - 1; i >= 0; i--)
             {
                 Console.Write(arr[i] + " ");
             }
             Console.WriteLine();
-           
+
 
 
 
@@ -205,33 +205,33 @@ Console.WriteLine (Compare(num1, num2));
             int number1 = Convert.ToInt32(Console.ReadLine());
             int number2 = Convert.ToInt32(Console.ReadLine());
 
-            
-                if (number1 % number2 == 0)
-                {
-                    Console.WriteLine( "Divisible");
-                }
-                else
-                {
-                    Console.WriteLine( "Not Divisible");
-                }
+
+            if (number1 % number2 == 0)
+            {
+                Console.WriteLine("Divisible");
+            }
+            else
+            {
+                Console.WriteLine("Not Divisible");
+            }
 
 
 
-//            12 - Find the Middle Value
-//Write a program to find the middle value of three numbers using arithmetic and comparison operators.
+            //            12 - Find the Middle Value
+            //Write a program to find the middle value of three numbers using arithmetic and comparison operators.
 
 
-                int firstnum=Convert.ToInt32(Console.ReadLine());
-            int midnum=Convert.ToInt32(Console.ReadLine());
-            int finalnum =Convert.ToInt32(Console.ReadLine());
+            int firstnum = Convert.ToInt32(Console.ReadLine());
+            int midnum = Convert.ToInt32(Console.ReadLine());
+            int finalnum = Convert.ToInt32(Console.ReadLine());
             int sort;
-            if (firstnum>midnum)
+            if (firstnum > midnum)
             {
                 sort = firstnum;
                 firstnum = midnum;
                 midnum = sort;
             }
-            if (midnum>finalnum)
+            if (midnum > finalnum)
             {
                 sort = midnum;
                 midnum = finalnum;
@@ -255,7 +255,7 @@ Console.WriteLine (Compare(num1, num2));
             //int num2 = Convert.ToInt32(Console.ReadLine());
             //int num3 = Convert.ToInt32(Console.ReadLine());
 
-           
+
             //int middle;
 
             //if ((num1 > num2 && num1 < num3) || (num1 > num3 && num1 < num2))
@@ -271,20 +271,45 @@ Console.WriteLine (Compare(num1, num2));
             //    middle = num3;
             //}
 
-           
+
             //Console.WriteLine($"The middle value is: {middle}");
-        
+
+
+
+            //Problem solving
+
+            //string word = Console.ReadLine().ToLower();
+            //char[] chars = { 'a', 'e','i','o', 'u' };
+            //int count = 0;
+            //foreach (var item in word)
+            //{
+            //    foreach (var item1 in chars)
+            //    {
+            //        if (item==item1)
+            //        {
+            //            count++; 
+            //        }
+            //    }
+            //}
+            //Console.WriteLine(count);
 
 
 
 
+            //  Write a program that calculates the sum of the digits of a number using arithmetic operators and loops(no conditionals).
+            //Input: 123
+            //Output: "Sum of digits: 6"
 
+            string sumindex = "123";
 
+            int count = 0;
 
+            for (int i = 0; i < sumindex.Length; i++)
+            {
 
-
-
-
-    }
+                count += int.Parse(sumindex[i].ToString());
+            }
+            Console.WriteLine(count);
+        }
     }
 }

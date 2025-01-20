@@ -11,94 +11,94 @@ namespace cohort_5_c_
     {
         static void Main(string[] args)
         {
-            ////1 - Create console application that read string from user and print the same string
+            //1 - Create console application that read string from user and print the same string
 
-            //string name = Console.ReadLine();
-            //Console.WriteLine("HELLO  " + name);
-
-
-
-            ////            2 - Define variables with kind of
-            ////a.Double
-            ////b.String
-            ////c.Char
-            ////d.Bool
-            ////e.Int
-            ////f.Const
-            ////Then display it in console application
-
-            //double price = 15.55;
-            //string name1 = "sura";
-            //char a = 'A';
-            //bool boolian = false;
-            //int number = 50;
-            //const float num = 3.14f;
-
-            //Console.WriteLine(name1);
+            string name = Console.ReadLine();
+            Console.WriteLine("HELLO  " + name);
 
 
 
-            ////3 - Define array with name car that hold more than 3 kinds on cars, then print all the cars with the array length.
+            //            2 - Define variables with kind of
+            //a.Double
+            //b.String
+            //c.Char
+            //d.Bool
+            //e.Int
+            //f.Const
+            //Then display it in console application
 
-            //string[] cars = { "BMW", "KIA", "HONDA" };
-            //foreach (var i in cars) // i ==> value
-            //{
-            //    Console.WriteLine(i);
-            //}
+            double price = 15.55;
+            string name1 = "sura";
+            char a = 'A';
+            bool boolian = false;
+            int number = 50;
+            const float num = 3.14f;
 
-
-
-
-            ////  4 - Write a program in C that reads a first name, Lastname and year of birth and display the names and the year one after another sequentially.Go to the editor
-            ////•	Input your firstname: Sami
-            ////•	Input your lastname: Ali
-            ////•	Input your year of birth: 1999
-            ////•	Sami Ali 1999
-
-
-
-            //Console.Write("Input Your First Name: ");
-            //string FirstName = Console.ReadLine();
+            Console.WriteLine(name1);
 
 
-            //Console.Write("Input Your Last Name: ");
-            //string LastName = Console.ReadLine();
 
+            //3 - Define array with name car that hold more than 3 kinds on cars, then print all the cars with the array length.
 
-            //Console.Write("Input Your Date of Birth: ");
-            //int birth = Convert.ToInt32(Console.ReadLine());
-
-
-            //Console.WriteLine(FirstName+" "+ LastName+" "+ birth);
+            string[] cars = { "BMW", "KIA", "HONDA" };
+            foreach (var i in cars) // i ==> value
+            {
+                Console.WriteLine(i);
+            }
 
 
 
 
-            ////   5 - Write a program in C # to store elements in an array and print it. 
-            ////•	Test Data :	
-            ////•	Input 10 elements in the array :
-            ////•	element - 0 : 1
-            ////•	element - 1 : 1
-            ////•	element - 2 : 2
-            ////•	.......
-            ////•	Expected Output :
-            ////•	Elements in array are: 1 1 2 3 4 5 6 7 8 9
+            //  4 - Write a program in C that reads a first name, Lastname and year of birth and display the names and the year one after another sequentially.Go to the editor
+            //•	Input your firstname: Sami
+            //•	Input your lastname: Ali
+            //•	Input your year of birth: 1999
+            //•	Sami Ali 1999
 
 
-            //int[] elements = new int[10];
-            //Console.WriteLine("Enter 10 elements:");
 
-            //for (int i = 0; i < elements.Length; i++)
-            //{
+            Console.Write("Input Your First Name: ");
+            string FirstName = Console.ReadLine();
 
-            //    elements[i] = Convert.ToInt32(Console.ReadLine());
-            //}
 
-            //Console.WriteLine("Array elements: ");
-            //for (int i = 0; i < elements.Length; i++)
-            //{
-            //    Console.Write(elements[i] + " ");
-            //}
+            Console.Write("Input Your Last Name: ");
+            string LastName = Console.ReadLine();
+
+
+            Console.Write("Input Your Date of Birth: ");
+            int birth = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine(FirstName + " " + LastName + " " + birth);
+
+
+
+
+            //   5 - Write a program in C # to store elements in an array and print it. 
+            //•	Test Data :	
+            //•	Input 10 elements in the array :
+            //•	element - 0 : 1
+            //•	element - 1 : 1
+            //•	element - 2 : 2
+            //•	.......
+            //•	Expected Output :
+            //•	Elements in array are: 1 1 2 3 4 5 6 7 8 9
+
+
+            int[] elements = new int[10];
+            Console.WriteLine("Enter 10 elements:");
+
+            for (int i = 0; i < elements.Length; i++)
+            {
+
+                elements[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("Array elements: ");
+            for (int i = 0; i < elements.Length; i++)
+            {
+                Console.Write(elements[i] + " ");
+            }
 
             //int num = Convert.ToInt32(Console.ReadLine());
             //Console.WriteLine("age " + num);
@@ -147,7 +147,7 @@ namespace cohort_5_c_
             //Console.WriteLine("Enter the element: ");
             //for (int i = 0; i < arr.Length; i++)
             //{
-            //   arr[i]= Convert.ToInt32(Console.ReadLine());
+            //    arr[i] = Convert.ToInt32(Console.ReadLine());
             //}
             //foreach (var i in arr)
             //{
@@ -171,73 +171,73 @@ namespace cohort_5_c_
 
 
 
-            string[] colors ={ "Red", "Blue", "Green", "Yellow", "Rose", "Purple", "black", "Ruby"};
+            //string[] colors ={ "Red", "Blue", "Green", "Yellow", "Rose", "Purple", "black", "Ruby"};
 
-            string color = "";
-            int count = 0;
+            //string color = "";
+            //int count = 0;
 
-            foreach (string co in colors)
-            {
-                if (co.StartsWith("R", StringComparison.OrdinalIgnoreCase))
-                {
-                    color += co + ' ';
-                    count++;
+            //foreach (string co in colors)
+            //{
+            //    if (co.StartsWith("R", StringComparison.OrdinalIgnoreCase))
+            //    {
+            //        color += co + ' ';
+            //        count++;
 
-                }
-            }
-            if (count>0)
-                {
-                    Console.WriteLine("colors starting with 'R' :"+color);
-                    
-                }
-            Console.WriteLine("Total count :" + count);
-            }
-        
-        
+            //    }
+            //}
+            //if (count>0)
+            //    {
+            //        Console.WriteLine("colors starting with 'R' :"+color);
 
-            int[] numbers1 = new int[6];
-            for (int i = 0; i < numbers1.Length; i++)
-            {
-                numbers1[i]= Convert.ToInt32(Console.ReadLine());
-            }
+            //    }
+            //Console.WriteLine("Total count :" + count);
+            //}
 
 
-            float sum = 0;
-            foreach (int element in numbers1)
-            {
-                sum += element;
-            }
-            Console.WriteLine("Sum of elements : " + sum);
-            Console.WriteLine("Avarege of elements : "+sum/(numbers1.Length));
 
-            int min = numbers1[0];
-            foreach (var item in numbers1)
-            {
-                if (item<min)
-                {
-                    min = item; 
-                }
-            }
-            Console.WriteLine("Minimum value :" + min);
+            //int[] numbers1 = new int[6];
+            //for (int i = 0; i < numbers1.Length; i++)
+            //{
+            //    numbers1[i]= Convert.ToInt32(Console.ReadLine());
+            //}
 
 
-            int max = numbers1[0];
-            foreach (var i in numbers1)
-            {
-                if (i>max)
-                {
-                    max = i;
-                }
-            }
-            Console.WriteLine("Maximam value : " + max );
+            //float sum = 0;
+            //foreach (int element in numbers1)
+            //{
+            //    sum += element;
+            //}
+            //Console.WriteLine("Sum of elements : " + sum);
+            //Console.WriteLine("Avarege of elements : "+sum/(numbers1.Length));
+
+            //int min = numbers1[0];
+            //foreach (var item in numbers1)
+            //{
+            //    if (item<min)
+            //    {
+            //        min = item; 
+            //    }
+            //}
+            //Console.WriteLine("Minimum value :" + min);
 
 
-            Array.Sort(numbers1);
-            Console.Write("sort");
-            foreach (var x in numbers1)
-            {
-                Console.Write(" "+x);
-            }
+            //int max = numbers1[0];
+            //foreach (var i in numbers1)
+            //{
+            //    if (i>max)
+            //    {
+            //        max = i;
+            //    }
+            //}
+            //Console.WriteLine("Maximam value : " + max );
+
+
+            //Array.Sort(numbers1);
+            //Console.Write("sort");
+            //foreach (var x in numbers1)
+            //{
+            //    Console.Write(" "+x);
+            //}
 
 
 
