@@ -55,32 +55,45 @@ namespace task3_20_1
         }
 
         //4
-        static int integers()
+        public static void print()
         {
-            int startNumber = Convert.ToInt32(Console.ReadLine());
-            int endNumber = Convert.ToInt32(Console.ReadLine());
+            int num = 15;
+            bool isPrime = false;
 
 
-            for (int i = startNumber; i <= endNumber; i++)
+            if (num == 2)  // number 2 is Prime
+
+                Console.WriteLine("prime");
+
+
+            else if (num % 2 == 0) // Even Number Not Prime
+
+                Console.WriteLine("Number not Prime ");
+
+            else // Odd Number To Check
             {
-                int counter = 0;
-                for (int j = 2; j <= i / 2; j++)
+                for (int i = 2; i < num; i++)
                 {
-                    if (i % j == 0)
+                    if (num % i == 0)
                     {
-                        counter++;
+                        isPrime = false;
                         break;
-                    }
-                }
 
-                if (counter == 0 && i != 1)
-                {
-                    Console.Write("{0} ", i);
+                    }
+                    else
+                        isPrime = true;
+
                 }
+                if (isPrime == true)
+                    Console.WriteLine("prime");
+                else
+                    Console.WriteLine("Not prime");
+
             }
-            return 0;
 
         }
+
+
 
         //5
         static int integerArray()
@@ -97,41 +110,44 @@ namespace task3_20_1
         }
 
         //6
-        static int numberpattern()
+        public static void printnumber()
         {
-            int n = 5;
-            int currentNum = 1;
-            for (int row = 1; row <= n; row++)
+
+            int count = 1;
+
+
+            for (int i = 0; i < 5; i++) // number of rows 
             {
-                for (int Column = 1; Column <= row; Column++)
+
+                for (int j = 0; j < i; j++) // numbers of colo.
                 {
-                    Console.Write(Column + " ");
-                    currentNum++;
+                    Console.Write(count);
+                    count++;
                 }
                 Console.WriteLine();
-
             }
 
-            return currentNum;
+
         }
 
 
 
 
         //7
-        static string starprint()
+        public static void printStars()
         {
-            string star = "*";
-            for (int i = 1; i < 5; i++)
+
+            for (int i = 0; i < 5; i++) // number of rows 
             {
-                for (global::System.Int32 j = 1; j <= i; j++)
+
+                for (int j = 0; j < i; j++) // numbers of colo.
                 {
                     Console.Write("*");
-                    star += "*";
                 }
                 Console.WriteLine();
             }
-            return star;
+
+
         }
 
 
@@ -144,7 +160,7 @@ namespace task3_20_1
             int[] array0 = { 1, 2, 3, 4, 5, 6 };
             for (int i = 0; i < array0.Length; i++)
             {
-                if (i%2==0)
+                if (array0[i] % 2==0)
                 {
                    evensum += array0[i];
                 }
@@ -204,12 +220,12 @@ namespace task3_20_1
             Console.WriteLine(factorial());
 
 
-            //            4 - Write a program that takes two integers as input and prints all the prime numbers between them using nested loops.
+            // 4 - Write a program that takes two integers as input and prints all the prime numbers between them using nested loops.
             //•	Example Input:
             //o Start: 10
             //o End: 30
+            print();
 
-            integers();
 
             //5 - Create a program that initializes an integer array and finds the largest number in it using a foreach loop.
             //•	Example Array: { 3, 1, 4, 1, 5, 9}
@@ -226,7 +242,7 @@ namespace task3_20_1
             //11 12 13 14 15
 
 
-            Console.WriteLine(numberpattern());
+            printnumber();
 
 
 
@@ -234,8 +250,8 @@ namespace task3_20_1
             //•	Example Input: n = 4
 
 
-            Console.WriteLine(starprint());
 
+            printStars();
 
 
             //8 - Write a program that takes an array of integers and calculates the sum of even numbers and odd numbers separately using loops.  (optional)
@@ -246,7 +262,7 @@ namespace task3_20_1
 
 
             //9 - Write a program that compares two arrays and prints their common elements using loops.
-            compartion();
+            //compartion();
 
             //Class && Object
 
@@ -263,7 +279,8 @@ namespace task3_20_1
             room1.PricePerNight = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine(room1.PricePerNight);
 
-            Console.WriteLine(Hotel.Booked);
+            room1.isBooked=Convert.ToBoolean(Console.ReadLine());
+            Console.WriteLine(room1.isBooked);
 
             //*****************************************************************
             Hotel room2 = new Hotel();
@@ -279,7 +296,8 @@ namespace task3_20_1
             room2.PricePerNight = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine(room2.PricePerNight);
 
-            Console.WriteLine(Hotel.Booked);
+            room2.isBooked=Convert.ToBoolean(Console.ReadLine());
+            Console.WriteLine(room2.isBooked);
 
 
 
@@ -293,7 +311,7 @@ namespace task3_20_1
         public int RoomNumber;
         public string RoomType;
         public double PricePerNight;
-        public const Boolean Booked = true;
+        public bool isBooked ;
 
     }
 }
