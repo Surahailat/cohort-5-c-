@@ -49,13 +49,13 @@ namespace task4_21_1
             }
             set
             {
-                if (value > 18)
+                if (value > MinAge && value<MaxAge)
                 {
                     Age = value;
                 }
                 else
                 {
-                    Age = 18;
+                    Age = MinAge;
                 }
 
             }
@@ -84,7 +84,7 @@ namespace task4_21_1
             Console.WriteLine();
         }
 
-        public StudentClass(string name1, int age, int id)//constructor
+        public StudentClass(string name1, int age, int id) //constructor
         {
             Name = name1;
             Age = age;
