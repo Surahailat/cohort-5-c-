@@ -10,7 +10,7 @@ namespace task5_22_1
         public string Brand { get; set; }
         public string Model { get; set; }
 
-        public void Start()
+        public void Start() //method
         {
             Console.WriteLine("Vehicle is starting");
         }
